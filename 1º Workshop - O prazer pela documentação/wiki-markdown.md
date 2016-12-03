@@ -234,3 +234,11 @@ Links:
 1. Documentação do [lxc]
 
 [lxc]: https://linuxcontainers.org/lxc/documentation/ 'lxc'
+
+---
+
+## Referência
+
+Documentação [markdown]
+
+[markdown]: https://daringfireball.net/projects/markdown/syntax
