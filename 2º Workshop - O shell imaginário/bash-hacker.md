@@ -21,17 +21,17 @@ Objetivo: Mostrar que é possível, sim, ser criativo no bash. Não sejas um dec
 
 ## Teste de conexão
 
-+ Conectando ao gatekeeper
++ Conectando ao serviço ssh
 
 ```bash
-$ timeout 10 cat </dev/tcp/batcaverna.f13.com.br/222
+$ timeout 10 cat </dev/tcp/127.0.0.1/22
 SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1.8
 ```
 
 + Conectando ao servidor SMTP
 
 ```bash
-$ timeout 10 cat </dev/tcp/webmail.f13.com.br/25
+$ timeout 10 cat </dev/tcp/127.0.0.1/25
 220 mailservice01.f13.com.br ESMTP Postfix
 ```
 
