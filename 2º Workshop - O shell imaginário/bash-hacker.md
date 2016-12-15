@@ -32,7 +32,7 @@ SSH-2.0-OpenSSH_5.9p1 Debian-5ubuntu1.8
 
 ```bash
 $ timeout 10 cat </dev/tcp/127.0.0.1/25
-220 mailservice01.f13.com.br ESMTP Postfix
+220 foo.com.br ESMTP Postfix
 ```
 
 + Função para teste de conexão
