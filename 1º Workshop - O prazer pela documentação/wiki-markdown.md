@@ -98,7 +98,3 @@ Para reproduzir uma linha horinzontal escreva três ou mais hífens, asteriscos,
 O Markdown suporta dois estilos de link: inline e reference.
 
 *_conteúdo removido_*
-
-19:15 legendado
-
-iguatemi
