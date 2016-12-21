@@ -90,11 +90,11 @@ bash    3981 enilton    5u  IPv4  48450      0t0  TCP 192.168.0.8:41250->mailser
 
 
                   ---       +-----------------------+
-standard input   ( 0 ) <----| /dev/pts/2            |
+standard input   ( 0 ) <----| 5                     |
                   ---       +-----------------------+
 
                   ---       +-----------------------+
-standard output  ( 1 ) ---->| /dev/pts/2            |
+standard output  ( 1 ) ---->| 5                     |
                   ---       +-----------------------+
 
                   ---       +-----------------------+
@@ -142,5 +142,3 @@ Hash md5 da cópia
 ```bash
 be9391112776755e898801d3f3f51b74  /tmp/eclipse.tar.gz
 ```
-
-
