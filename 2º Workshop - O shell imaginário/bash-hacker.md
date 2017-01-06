@@ -45,21 +45,34 @@ function loginOnSmtp(){
     auth=${4}
     user=${5}
     pass=${6}
+    mailFrom=${7}
+    rcptTo=${8}
+    data=${9}
     exec 5<>/dev/tcp/$host/$port
     echo -e "$ehlo" >&5
     sleep 2
     echo -e "$auth" >&5
-    wait
+    sleep 2
     echo -e "$user" >&5
-    wait
+    sleep 1
     echo -e "$pass" >&5
-    wait
-    timeout 2 cat <&5
+    sleep 1
+    echo -e "$mailFrom" >&5
+    sleep 1
+    echo -e "$rcptTo" >&5
+    sleep 1
+    echo -e "DATA" >&5
+    sleep 1
+    echo -e "$data"  >&5
+    sleep 1
+    echo -e '\r\n.\r\n'  >&5
+    sleep 1
+    timeout 6 cat <&5
     exec 5>&-
 }; export -f loginOnSmtp
 ```
 
-loginOnSmtp mail.foo.com.br 25 "ehlo foo.com.br\r" "auth login\r" "usernameBase64\r" "passwordBase64\r"
+loginOnSmtp mail.foo.com.br 25 "ehlo foo.com.br\r" "auth login\r" "usernameBase64\r" "passwordBase64\r" "mail from:...\r" "rcpt to:...\r" "Subject:...\r\r...data\r"
 
 ```text
 220 mailservice01.foo.com.br ESMTP Postfix
