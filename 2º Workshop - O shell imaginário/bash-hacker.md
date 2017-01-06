@@ -76,7 +76,7 @@ loginOnSmtp mail.foo.com.br 25 "ehlo foo.com.br\r" "auth login\r" "usernameBase6
 
 ```text
 220 mailservice01.foo.com.br ESMTP Postfix
-250-mailservice01.foo..com.br
+250-mailservice01.foo.com.br
 250-STARTTLS
 250-SIZE 1048576000
 250-VRFY
@@ -86,6 +86,11 @@ loginOnSmtp mail.foo.com.br 25 "ehlo foo.com.br\r" "auth login\r" "usernameBase6
 334 VXNlcm5hbWU6
 334 UGFzc3dvcmQ6
 235 2.7.0 Authentication successful
+250 2.1.0 Ok
+250 2.1.5 Ok
+354 End data with <CR><LF>.<CR><LF>
+250 2.0.0 Ok: queued as 3AA095800F94
+500 5.5.2 Error: bad syntax
 ```
 
 + Visualizando o redirecionamento
@@ -99,7 +104,7 @@ COMMAND  PID    USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
 bash    3981 enilton    0u   CHR  136,2      0t0    5 /dev/pts/2
 bash    3981 enilton    1u   CHR  136,2      0t0    5 /dev/pts/2
 bash    3981 enilton    2u   CHR  136,2      0t0    5 /dev/pts/2
-bash    3981 enilton    5u  IPv4  48450      0t0  TCP 192.168.0.8:41250->mailservice01.f13.com.br:smtp (ESTABLISHED)
+bash    3981 enilton    5u  IPv4  48450      0t0  TCP 192.168.0.8:41250->mailservice01.foo.com.br:smtp (ESTABLISHED)
 
 
                   ---       +-----------------------+
