@@ -38,9 +38,9 @@ $ timeout 10 cat </dev/tcp/127.0.0.1/25
 + Função para teste de conexão
 
 ```bash
-function loginOnSmtp(){
-    host=${1:-127.0.0.1}
-    port=${2:-25}
+function sendMail(){
+    host=${1} #smtp server
+    port=${2} #port 25 or 587
     ehlo=${3}
     auth=${4}
     user=${5}
@@ -72,7 +72,7 @@ function loginOnSmtp(){
 }; export -f loginOnSmtp
 ```
 
-loginOnSmtp mail.foo.com.br 25 "ehlo foo.com.br\r" "auth login\r" "usernameBase64\r" "passwordBase64\r" "mail from:...\r" "rcpt to:...\r" "Subject:...\r\r...data\r"
+sendMail mail.foo.com.br 25 "ehlo foo.com.br\r" "auth login\r" "usernameBase64\r" "passwordBase64\r" "mail from:...\r" "rcpt to:...\r" "Subject:...\r\r...data\r"
 
 ```text
 220 mailservice01.foo.com.br ESMTP Postfix
