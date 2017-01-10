@@ -28,7 +28,12 @@ Nesse workshop falaremos sobre a técnica **Application Whitelisting**
 
 Compreender os principios básicos da técnica _Application Whitelist_ e implementá-lo corretamente pois, inacreditavelmente é um meio efetivo de segurança, estabilidade do ambiente. Porém, se implementado de forma incorreta ou incompleta, pode levar a um ambiente que aparentemente é mais seguro do que realmente é.
 
-## Application Whitelist: Threads
+## Application Whitelist: Ambiente Linux
+
+Para o Linux não existe uma ferramenta que facilite a implementação da técnica _Application Whitelist_, porém, para a comunidade opensource temos duas tecnologias que possuem uma relação fraca com à prática. São elas:
+
++ SELinux
++ APP armor
 
 
 
