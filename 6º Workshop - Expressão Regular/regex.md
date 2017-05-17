@@ -74,7 +74,7 @@ Exemplo 1: ` ./seminario.pl --search '[sX][eE3][Xx][oO0]'`
 1556dd70  1e 09 ad 3c ea eb 43 d0  73 33 78 4f 19 0c 0c 9b  |...<..C.s3xO....|
 ```
 
-Exemplo 2: ` ./seminario.pl --search 'V[a-zA-Z]{5}(?=\\.)'`
+Exemplo 2: ` ./seminario.pl --search 'V[a-zA-Z]{5}(?=\.)'`
 ```
 081173a0  ae 3f 04 05 46 ca 8e 9c  f0 56 45 49 4e 77 75 c9  |.?..F....VEINwu.|
 08253390  c3 1e 13 66 56 64 56 69  71 70 8e f1 d9 7c 1f 5f  |...fVdViqp...|._|
@@ -86,7 +86,7 @@ Exemplo 2: ` ./seminario.pl --search 'V[a-zA-Z]{5}(?=\\.)'`
 08ef6280  8e 8f 38 56 53 48 5a 4b  47 b3 2b 66 6a 84 4a 53  |..8VSHZKG.+fj.JS|
 ```
 
-Exemplo 3: ` ./seminario.pl --search '(BR-|[a-zA-Z]+\\.mp4)'`
+Exemplo 3: ` ./seminario.pl --search '(BR-|[a-zA-Z]+\.mp4)'`
 
 
 ```
@@ -145,12 +145,12 @@ x5', 'sMxi', 's0xZ', 'sTxL', 'slxy', 'swxW', 'slxP', 'sOxm', 'sdxK', 'soxq', 'sg
  's7xW']
  ```
 
- ./seminario.py -s '[a-zA-Z]+\\.mp4'
+ ./seminario.py -s '[a-zA-Z]+\.mp4'
  ```
 ['HD.mp4', 'HD.mp4', 'N.mp4', 'yF.mp4']
 ```
 
-./seminario.py -s 'V\w{5}(?=\\.)'
+./seminario.py -s 'V\w{5}(?=\.)'
 ```
 ['V___XX', 'VEINwu', 'VK7IYX', 'VdViqp', 'VfU6QH', 'VT3yet', 'VsvOQb', 'VqNOTF', 'VDq5FG', 'VMv1iL', 'V8w0iy', 'Vd3fdz', 'VavnNP', 'VpVEPR', 'Vk8pKJ', 'VoLD38', 'V3XJm2', 'VCEorz',
  'VSHZKG', 'Vk0Uv1', 'VVRqy_', 'V3H9hn', 'VJEheU', 'VoDm_p', 'VeYWCS', 'VhN0B1', 'VV55fy', 'V7koUE', 'VZ7Hnc', 'VsHwmG', 'VkRkEc', 'VXoYaH', 'VApvrj', 'Vkh7EW', 'VDGFNl', 'VXBXhL',
