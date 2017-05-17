@@ -109,24 +109,23 @@ Exemplo 4: ` ./seminario.pl --search '(Voice(?=\.)|[a-zA-Z]+\.mkv)'`
 
 No python o padrão de expressão regular é suportado pela biblioteca ***re***
 
-
-Exemplo 1: ./seminario.py -s 's3x0'  
+Exemplo 1: ` ./seminario.py -s 's3x0'`
 ```
 ['s3x0']
 ```
 
-Exemplo 2: ./seminario.py -s '[sX][eE3][Xx][oO0]'
+Exemplo 2: ` ./seminario.py -s '[sX][eE3][Xx][oO0]'`
 ```
 ['s3x0', 's3xO']
 ```
 
-Exemplo 3: ./seminario.py -s 's[0-9a-zA-Z]x[:alnum:]'
+Exemplo 3: ` ./seminario.py -s 's[0-9a-zA-Z]x[:alnum:]'`
 ```
 ['ssxu', 'shxl', 'sVxm', 's3xl', 'sRx:', 'snxl', 'slx:', 's9xa', 'sqxu', 'sTxn', 'sgx:', 'smxm', 's2xn', 'sMxl', 'slxn', 's8xl', 's8xl', 'sYx:', 'saxu', 'snxn', 'sBxm', 'sOxm', 's6
 xa']
 ```
 
-Exemplo 4: ./seminario.py -s 's[0-9a-zA-Z]x[0-9a-zA-Z]'  
+Exemplo 4: ` ./seminario.py -s 's[0-9a-zA-Z]x[0-9a-zA-Z]'`
 ```
 ['s3x0', 'ssxu', 'sFx4', 'sQxc', 'scxU', 's3xx', 'sMxw', 's7x0', 's8xq', 'sDxi', 'sdxt', 'sZxN', 'sjxZ', 'sLxH', 'shxl', 's4xY', 's1xN', 'sJx4', 's7xc', 'smxh', 'svxC', 's0xw', 'sk
 xS', 'sQxe', 's6xK', 'sDxr', 'sfxG', 'sSx6', 'sqx6', 'skxS', 'sVxm', 'suxh', 'sDxK', 's0xt', 'sSx7', 'sjxH', 'sbxj', 'swxj', 'soxN', 'sFxi', 'sexC', 'slxi', 'sZxt', 'sTxG', 's8xs',
@@ -145,12 +144,12 @@ x5', 'sMxi', 's0xZ', 'sTxL', 'slxy', 'swxW', 'slxP', 'sOxm', 'sdxK', 'soxq', 'sg
  's7xW']
  ```
 
- ./seminario.py -s '[a-zA-Z]+\.mp4'
+Exemplo 5: ` ./seminario.py -s '[a-zA-Z]+\.mp4'`
  ```
 ['HD.mp4', 'HD.mp4', 'N.mp4', 'yF.mp4']
 ```
 
-./seminario.py -s 'V\w{5}(?=\.)'
+Exemplo 6: `./seminario.py -s 'V\w{5}(?=\.)'`
 ```
 ['V___XX', 'VEINwu', 'VK7IYX', 'VdViqp', 'VfU6QH', 'VT3yet', 'VsvOQb', 'VqNOTF', 'VDq5FG', 'VMv1iL', 'V8w0iy', 'Vd3fdz', 'VavnNP', 'VpVEPR', 'Vk8pKJ', 'VoLD38', 'V3XJm2', 'VCEorz',
  'VSHZKG', 'Vk0Uv1', 'VVRqy_', 'V3H9hn', 'VJEheU', 'VoDm_p', 'VeYWCS', 'VhN0B1', 'VV55fy', 'V7koUE', 'VZ7Hnc', 'VsHwmG', 'VkRkEc', 'VXoYaH', 'VApvrj', 'Vkh7EW', 'VDGFNl', 'VXBXhL',
