@@ -56,7 +56,26 @@ Técnica que utiliza cartões como meio de sinalização de como estar o andamen
 
 No gitlab por padrão temos o `backlog`, termo conhecido do método ágil para listar a prioridade do cliente.
 
+## Workflow
 
+```text
+             Release v1.0.0                                      Release v1.1.0                             Release v1.1.1 
+            º--------------                                     º--------------                            º---------------
+master:  --(*)-------------------------------------------------[*]-----------------(-)-------------------[*]---->
+            \                                                  /                    \                    /
+             \                                                /                      \                  / 
+hotfix:  -----\----------------------------------------------/-----------------------(o)--------------(o)
+               \                                            /                                           \
+develop:  º----[*]-------(o)---------[o]------------[o]----(o)------------------------------------------(*)----------------> 
+                 \ Is#1   \          /              /                                                    |
+issues:           º--------\-------(o)-------------/---------->                                          |
+                            \ Is#2                /                                                      |
+                             º------------------(o)----------->                                          |
+                                                                                                        /º\
+                                                                                                      .-m-m-.
+                                                                                                      : ??? :
+                                                                                                      .......
+```
 
 Home: `https://gitlab.f13.com.br:7443/puppet/f13-assp/boards`
 
