@@ -53,18 +53,18 @@ Tabela 2: ` Classes de caracteres`
 
 Tabela 3: ` Olhar em volta`
 
-## Exemplos:
-
-Tenha cuidado com o metacaractere ***.*** (ponto final) durante a fase de criação.
-
-### Perl - Exemplos
-
 |  Classe           | Descrição |
 |:-----------------:|:----------|
 |***(?=pattern)***  | Mostra o que está antes da classe, somente se, a entrada e a expressão regular casarem |
 |***(?!pattern)***  | Mostra o que está antes da classe, somente se, a entrada e a expressão regular não casarem |
 |***(?<=pattern)*** | Mostra o que está depois da classe, somente se, haver combinação entre a entrada e a expressão regular |
 |***(?<!pattern)*** | Mostra o que está depois da classe, somente se, não haver combinação entre a entrada e a expressão regular |
+
+## Exemplos:
+
+Tenha cuidado com o metacaractere ***.*** (ponto final) durante a fase de criação.
+
+### Perl - Exemplos
 
 > O Perl implementa uma semântica mais consistente e rica que o padraão `POSIX`, assim como foi a principal ferramenta que impulsionou o Regex.
 
