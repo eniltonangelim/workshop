@@ -5,7 +5,7 @@ _`Jamie Zawinski. 1997`_
 
 ## O que é regex? 
 
-A Expressão Regular é a realidade subjetiva da nossa intuição interna para identificar padrões em relação a computação, reaproveitando-se do conhecimento "a priori" e evitando o uso desnecessário da regressão linear para atingir o objetivo proposto. Ou seja, criamos uma representação abstrata da forma que queremos extraí, concebendo uma nova forma pura do Objeto sintético, sensível a nossa intuição e capacidade de abstração. Portanto, Expressão Regular limita-se ao seu entendimento.
+A Expressão Regular é a realidade subjetiva da nossa intuição interna para identificar padrões em relação a computação, reaproveitando-se do conhecimento "a priori" e evitando o uso desnecessário da regressão linear para atingir o objetivo proposto. Ou seja, criamos uma representação abstrata da forma que queremos extraí, concebendo uma nova forma pura do Objeto sintético, sensível a nossa intuição e capacidade de abstração. Portanto, Expressão Regular limita-se ao nosso entendimento.
 
 Fonte: Angelim
 
