@@ -9,8 +9,6 @@ A Expressão Regular é a realidade subjetiva da nossa intuição interna para i
 
 Fonte: Angelim
 
-> Regex é que nem c[a-z]\b, cada um tem o seu!
-
 _"A **_expressão regular_** provê uma forma concisa e flexível de identificar cadeias de caracteres de interesse, como caracteres particulares, palavras ou padrões de caracteres. Expressões regulares são escritas numa linguagem formal que pode ser interpretada por um processador de expressão regular, um programa que serve um gerador de analisador sintático ou examina o texto e identifica as partes que casam com a especificação dada."_
 
 Fonte: [Wikipedia](https://pt.wikipedia.org/wiki/Express%C3%A3o_regular)
