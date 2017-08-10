@@ -29,8 +29,9 @@ O método *Descriptive* será usado para sintetizar a medição publicada pela *
 
 ## Sobre os dados
 
-A média de mortalidade é ajustado ao período de 30 dias para ataque cardíaco, insuficiência cardíaca. Os dados sobre a pneumonia é produzido a partir de pedidos do `Medicare` e os dados de inscrição.
+A média de mortalidade é ajustado ao período de 30 dias para ataque cardíaco, insuficiência cardíaca. Os dados sobre a pneumonia é produzido a partir dos pedidos do `Medicare` e dos dados de inscrição.
 
+Visualização da Taxa de Mortalidade por ataque do coração.
 
 ```{r}
 DATA_REPOSITORY_OUTCOME_MEASURE='/home/enilton/workspace/data-science/datasets/hospital_quality/outcome-of-care-measures.csv'
