@@ -1,0 +1,54 @@
+---
+title: "8º Workshop - O que podemos descobrir com a taxa de mortalidade nos Hospitais americanos?"
+output: html_notebook
+---
+
+## Questões
+
+1. Qual o melhor Hospital dos E.U.A ?
+2. Qual o melhor Hospital em cada Estado dos E.U.A?
+
+## Variáveis Quantitativas
+
+Será considerado a taxa de mortalidade dos itens:
+
+1. Insuficiência Cardíaca - A taxa é ajustada ao risco (Porcentagem) para cada hospital;
+2. Ataque cardíaco -  A taxa é ajustada ao risco (Porcentagem) para cada hospital;
+3. Pneumonia - A taxa é ajustada ao risco (Porcentagem) para cada hospital;
+
+## Variáveis Qualitativas
+
+Com a finalidade de demonstração, usarei as variáveis:
+
+1. Nome do Hospital
+2. Sigla do Estado Americano
+
+## Método de elaboração da resposta
+
+O método *Descriptive* será usado para sintetizar a medição publicada pela *U.S. Department of Health and Human Services*.
+
+## Sobre os dados
+
+A média de mortalidade é ajustado ao período de 30 dias para ataque cardíaco, insuficiência cardíaca. Os dados sobre a pneumonia é produzido a partir de pedidos do `Medicare` e os dados de inscrição.
+
+
+```{r}
+DATA_REPOSITORY_OUTCOME_MEASURE='/home/enilton/workspace/data-science/datasets/hospital_quality/outcome-of-care-measures.csv'
+outcome_measure <-read.csv(DATA_REPOSITORY_OUTCOME_MEASURE, colClasses = 'character')
+outcome_measure[, 11] <- suppressWarnings(
+      as.numeric(outcome_measure[, 11])
+    )
+outcome_measure <- na.omit(outcome_measure)
+plot(outcome_measure$Hospital.30.Day.Death..Mortality..Rates.from.Heart.Attack, ylab = 'Taxa de Mortalidade', xlab = 'Quantidade de medições')
+```
+
+
+
+## Análise exploratória
+
+<<Em construção>>
+
+| Dados | Descrição |
+|:--------------------:|:-------------------------------:|
+|outcome-of-care-measures.csv| Contém informações sobre a taxa de mortalidade, considerando o período de 30 dias para mais de 4.000 Hospitais |
+
