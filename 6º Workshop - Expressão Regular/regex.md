@@ -5,11 +5,9 @@ _`Jamie Zawinski. 1997`_
 
 ## O que é regex? 
 
-A Expressão Regular é a realidade subjetiva da nossa intuição interna para identificar padrões em relação a computação, reaproveitando-se do conhecimento "a priori" e evitando o uso desnecessário da regressão linear para atingir o objetivo proposto. Ou seja, criamos uma representação abstrata da forma que queremos extraí, concebendo uma nova forma pura do Objeto sintético, sensível a nossa intuição e capacidade de abstração. Portanto, Expressão Regular limita-se ao seu entendimento.
+A Expressão Regular é a realidade subjetiva da nossa intuição interna para identificar padrões em relação a computação, reaproveitando-se do conhecimento "a priori" e evitando o uso desnecessário da regressão linear para atingir o objetivo proposto. Ou seja, criamos uma representação abstrata da forma que queremos extraí, concebendo uma nova forma pura do Objeto sintético, sensível a nossa intuição e capacidade de abstração. Portanto, Expressão Regular limita-se ao nosso entendimento.
 
 Fonte: Angelim
-
-> Regex é que nem c[a-z]\b, cada um tem o seu!
 
 _"A **_expressão regular_** provê uma forma concisa e flexível de identificar cadeias de caracteres de interesse, como caracteres particulares, palavras ou padrões de caracteres. Expressões regulares são escritas numa linguagem formal que pode ser interpretada por um processador de expressão regular, um programa que serve um gerador de analisador sintático ou examina o texto e identifica as partes que casam com a especificação dada."_
 
