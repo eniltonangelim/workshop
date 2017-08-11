@@ -9,7 +9,8 @@ Nome: Enilton Angelim
 
 ## Questões
 
-1. Qual o melhor Hospital em cada Estado dos E.U.A?
+1. Quais são os melhores Hospitais dos E.U.A?
+2. Quais são os piores Hospitais dos E.U.A?
 
 ## Variáveis Quantitativas
 
@@ -79,12 +80,9 @@ summary(outcome_measure$Hospital.30.Day.Death..Mortality..Rates.from.Pneumonia)
 
 ## Resposta das Questões
 
-1. Qual o melhor Hospital dos E.U.A ? 
-
 
 
 ### Qual o melhor Hospital em cada Estado dos E.U.A? (rank estadual)
-
 
 1. Considerando os melhores resultados para **Ataque Cardíaco**
 
@@ -111,6 +109,37 @@ rankall("heart failure", 'best')
 source('~/workspace/data-science/tools/hospital/rankall.R')
 rankall("pneumonia", 'best')
 ```
+
+---
+
+### Qual o pior Hospital em cada Estado dos E.U.A? (rank estadual)
+
+1. Considerando os piores resultados para **Ataque Cardíaco**
+
+```{r, message=FALSE, warning=FALSE}
+source('~/workspace/data-science/tools/hospital/rankall.R')
+rankall("heart attack", 'worst')
+```
+
+---
+
+2. Considerando os piores resultados para **Insuficiência Cardíaca**
+
+```{r, message=FALSE, warning=FALSE}
+source('~/workspace/data-science/tools/hospital/rankall.R')
+rankall("heart failure", 'worst')
+```
+
+---
+
+3. Considerando os piores resultados para **Pneumonia**
+
+```{r, message=FALSE, warning=FALSE}
+source('~/workspace/data-science/tools/hospital/rankall.R')
+rankall("pneumonia", 'worst')
+```
+
+---
 
 ## Scripts
 
