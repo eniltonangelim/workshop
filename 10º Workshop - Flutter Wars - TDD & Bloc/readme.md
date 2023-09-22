@@ -1,27 +1,21 @@
 # 10º Workshop - Flutter Wars: Dominando o lado escuro do TDD com o poder do Bloc
 
+> "Clean code that works, in Ron Jeffries' pithy phrase, is the goal of Test-Driven Development" - Test-Driven Development by Example, Kent Beck
 
 ## O que é TDD?
 
-- [x] Quebra de paradigma
-- [x] É para testar tudo?
-- [x] O que ganho?
+É uma abordagem de desenvolvimento de Software em que os Teste são escritos antes do código de produção.
 
-1. Ajuda a encontrar problema de requisito na estória do usuário;
-2. Ajuda a encontra falha na definição da funcionalidade;
-3. Ajuda a garantir qualidade na entrega;
+O processo geralmente segue três passos:
+
+1. Escrever um teste (Red);
+2. Escrever um código de produção (Green);
+3. Refatorar o código (To-Red);
+
 
 ## O que é Bloc?
 
-```text
-
-```
-
-## O que é Flutter?
-
-```text
-
-```
+Uma biblioteca de gerenciamento de estado previsível que ajuda a implementar o padrão de design BLoC.
 
 ## Projeto
 
@@ -40,7 +34,7 @@ Se não for possível chegar ao destino, me avise com um alerta e interrompa a n
 
 [Github: Car Fueling](https://github.com/eniltonangelim/car_fueling.git)
 
-![](./assets/carfueling_home.jpeg)
+![](./assets/carfueling_home.png)
 
 Ilustrado e animado por Enilton Angelim
 
