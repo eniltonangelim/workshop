@@ -81,7 +81,7 @@ void loginTest(IntegrationTestWidgetsFlutterBinding binding) {
     await binding.traceAction(
       () async {
         await TestHelper.enterDataInTextField(
-            finder: usernameTextField, data: "enilton.angelim@gmail.com");
+            finder: usernameTextField, data: "teste@gmail.com");
         await TestHelper.enterDataInTextField(
             finder: passwordTextField, data: "12345678");
         await TestHelper.tapOnButton(finder: login);
@@ -107,7 +107,7 @@ void loginTest(IntegrationTestWidgetsFlutterBinding binding) {
     final passwordTextField = find.byKey(const ValueKey("PASSWORD"));
 
     await TestHelper.enterDataInTextField(
-        finder: usernameTextField, data: "enilton.angelim@gmail.com");
+        finder: usernameTextField, data: "teste@gmail.com");
     await TestHelper.enterDataInTextField(
         finder: passwordTextField, data: "12345678");
     await TestHelper.tapOnButton(finder: login);
